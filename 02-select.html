@@ -7,9 +7,8 @@
     <title>Document</title>
 
     <style>
-    
       section {
-        max-width: 1000px;
+        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 2rem;
@@ -18,7 +17,8 @@
         width: 100%;
       }
 
-      h1, footer{
+      h1,
+      footer {
         text-align: center;
       }
       body {
@@ -65,7 +65,25 @@
       <p>This is the footer</p>
       <hr />
     </footer>
-  
 
-</body>
+    <script>
+      const h1 = document.querySelector("h1");
+      console.log(h1);
+
+      const h2 = document.querySelector("h2");
+      console.log(h2);
+
+      const artikel1 = document.querySelector("article:nth-child(1)");
+      console.log(artikel1);
+
+      const artikel1Pic = document.querySelector("article:nth-child(1) img");
+      console.log(artikel1Pic);
+
+      const artikel2 = document.querySelector("article:nth-child(2)");
+      console.log(artikel2);
+
+      const artikel2Pic = document.querySelector("article:nth-child(2) img");
+      console.log(artikel2Pic);
+    </script>
+  </body>
 </html>
