@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+    
+      section {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 2rem;
+      }
+      img {
+        width: 100%;
+      }
+
+      h1, footer{
+        text-align: center;
+      }
+      body {
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1>Title</h1>
@@ -15,8 +37,8 @@
 
     <main>
       <section>
-        <img src="https://placeimg.com/640/480/any" />
         <article>
+          <img src="https://placeimg.com/640/480/any" />
           <h3>Article1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
@@ -25,11 +47,9 @@
             voluptatem repudiandae aperiam est corrupti.
           </p>
         </article>
-      </section>
 
-      <section>
-        <img src="https://placeimg.com/640/480/any" />
         <article>
+          <img src="https://placeimg.com/640/480/any" />
           <h3>Article2</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
