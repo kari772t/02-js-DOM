@@ -102,12 +102,20 @@
       let article3 = document.createElement("article3");
       let overskrift = document.createElement("h3");
       let overskriftText = document.createTextNode("Article3");
+      let billede = document.createElement("img");
+      let text = document.createElement("p");
+      let tekstText = document.createTextNode(
+        "Hullu bu luuu Lotte hvor er du henne??"
+      );
+
+      article3.appendChild(billede);
+      billede.src = "https://placeimg.com/640/480/animal";
       overskrift.appendChild(overskriftText);
       article3.appendChild(overskrift);
       mainSection.appendChild(article3);
 
-
-    
+      article3.appendChild(text);
+      text.appendChild(tekstText);
     </script>
   </body>
 </html>
