@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      section {
+        max-width: 1250px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 2rem;
+      }
+      img {
+        width: 100%;
+      }
+
+      h1,
+      footer {
+        text-align: center;
+      }
+      body {
+        margin-left: 6rem;
+        margin-right: 6rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Title</h1>
+      <hr />
+      <h2>Undertitle</h2>
+    </header>
+
+    <main>
+      <section>
+        <article>
+          <img src="https://placeimg.com/640/480/any" />
+          <h3>Article1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            esse sapiente fugit, laborum culpa assumenda reiciendis debitis
+            velit inventore, ipsam dicta veritatis accusantium odio hic
+            voluptatem repudiandae aperiam est corrupti.
+          </p>
+        </article>
+
+        <article>
+          <img src="https://placeimg.com/640/480/any" />
+          <h3>Article2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consectetur dolores quod harum, illo neque laboriosam eaque a nulla
+            consequuntur fugiat unde praesentium vitae animi aut aliquam
+            veritatis labore necessitatibus officia?
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p>This is the footer</p>
+      <hr />
+    </footer>
+
+    <script>
+      const h1 = document.querySelector("h1");
+      console.log(h1);
+
+      const h2 = document.querySelector("h2");
+      console.log(h2);
+
+      const artikel1 = document.querySelector("article:nth-child(1)");
+      console.log(artikel1);
+
+      const artikel1Pic = document.querySelector("article:nth-child(1) img");
+      console.log(artikel1Pic);
+
+      const artikel1P = document.querySelector("article:nth-child(1) p");
+      console.log(artikel1P);
+
+      const artikel2 = document.querySelector("article:nth-child(2)");
+      console.log(artikel2);
+
+      const artikel2Pic = document.querySelector("article:nth-child(2) img");
+      console.log(artikel2Pic);
+
+      const artikel2P = document.querySelector("article:nth-child(2) p");
+      console.log(artikel2P);
+
+      h1.innerHTML = "Hopla";
+
+      artikel1P.innerHTML = "Ny tekst til billede 1";
+      artikel2P.textContent = "Ny tekst til billede 2";
+
+      artikel1Pic.src = "https://placeimg.com/640/480/tech";
+
+      let mainSection = document.querySelector("section");
+      let article3 = document.createElement("article3");
+      let overskrift = document.createElement("h3");
+      let overskriftText = document.createTextNode("Article3");
+      overskrift.appendChild(overskriftText);
+      article3.appendChild(overskrift);
+      mainSection.appendChild(article3);
+
+
+    
+    </script>
+  </body>
+</html>
